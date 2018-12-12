@@ -1,4 +1,46 @@
-.container{
-    background:#5bc0de;
+body {
+    background: #2c2c2c;
+}
+
+.container {
+    background: #5bc0de;
     border: 1px solid #c7254e;
+}
+
+.blog-logo {
+    width: 50px;
+    margin: -10px 20px 0 -15px;
+}
+
+.navbar {
+    background-color: transparent;
+    border: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #1b6d85;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        background-color: #242d3b;
+    }
+
+    .navbar-default .navbar-toggle {
+        color: white;
+    }
+
+    .navbar-default .navbar-toggle:hover {
+        background-color: white;
+        color: #242d3b;
+    }
+
+    .navbar-default .navbar-toggle:focus {
+        background-color: transparent;
+        color: white;
+    }
 }
