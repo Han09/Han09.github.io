@@ -21,9 +21,9 @@ function media() {
     var result1 = window.matchMedia('(min-width:1200px)');
     var result2 = window.matchMedia('(min-width:992px)');
     var result3 = window.matchMedia('(min-width:768px)');
-    var navbarcondition = true;
     if (result1.matches) {
         console.log("大屏幕(>=1200)");//判断窗口状态，，会大量输出console，后期删除
+
         navbar()
     } else if (result2.matches) {
         console.log("中等屏幕(>=992&<=1200)");//判断窗口状态，，会大量输出console，后期删除
