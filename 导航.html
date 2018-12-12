@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="UTF-8">
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
     <title>韩林轩</title>
@@ -8,9 +8,14 @@
     <script src="js/bootstrap.js"></script>
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="img/favicon.png">
+    <script src="js/demo.js"></script>
+    <script
+            src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"
+            integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE="
+            crossorigin="anonymous"></script>
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">
@@ -18,14 +23,17 @@
             </a>
             <button type="button" class="navbar-toggle collapsed " data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only">切换导航</span>
                 <span class="menu">M E N U</span>
             </button>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="daohang">
             <ul class="nav navbar-nav">
                 <li><a href="#">首页<span class="sr-only">(current)</span></a></li>
-                <li><a href="#">链接1</a></li>
+                <li><a href="#">板块1</a></li>
+                <li><a href="#">板块2</a></li>
+                <li><a href="#">板块3</a></li>
+                <li><a href="#">板块4</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -44,10 +52,26 @@
 
 </nav>
 <div class="container">
-    <h1>这是一个示意标题</h1>
+    <div id="section1" class="container-fluid">
+        <h1>Section 1</h1>
+        <p>板块内容</p>
+    </div>
+    <div id="section2" class="container-fluid">
+        <h1>Section 2</h1>
+        <p>板块内容</p>
+    </div>
+    <div id="section3" class="container-fluid">
+        <h1>Section 3</h1>
+        <p>板块内容</p>
+    </div>
+    <div id="section4z1" class="container-fluid">
+        <h1>Section 4 菜单子板块1</h1>
+        <p>板块内容</p>
+    </div>
+    <div id="section4z2" class="container-fluid">
+        <h1>Section 4 菜单子板块2</h1>
+        <p>板块内容</p>
+    </div>
 </div>
 </body>
-<script>
-
-</script>
 </html>
