@@ -15,8 +15,7 @@
 </head>
 
 
-
-<body>
+<body data-spy="scroll" data-target="#daohang">
 <!--导航部分-->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -31,14 +30,15 @@
             </button>
         </div>
         <div class="collapse navbar-collapse" id="daohang">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" role="tablist">
                 <li><a href="#">首页<span class="sr-only">(current)</span></a></li>
-                <li><a href="#">板块1</a></li>
-                <li><a href="#">板块2</a></li>
-                <li><a href="#">板块3</a></li>
-                <li><a href="#">板块4</a></li>
+                <li><a href="#section1">板块1</a></li>
+                <li><a href="#section2">板块2</a></li>
+                <li><a href="#section3">板块3</a></li>
+                <li><a href="#section4">板块4</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">下拉菜单<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">菜单项1</a></li>
                         <li><a href="#"></a></li>
@@ -60,27 +60,31 @@
 
 <!--内容部分-->
 <div class="container">
-    <div id="section1" class="container-fluid">
-        <h1>Section 1</h1>
+    <div id="section1" class="container-fluid section">
+        <h1>Section 1 </h1>
         <p>板块内容</p>
     </div>
-    <div id="section2" class="container-fluid">
+    <div id="section2" class="container-fluid section">
         <h1>Section 2</h1>
         <p>板块内容</p>
     </div>
-    <div id="section3" class="container-fluid">
+    <div id="section3" class="container-fluid section">
         <h1>Section 3</h1>
         <p>板块内容</p>
     </div>
-    <div id="section4z1" class="container-fluid">
-        <h1>Section 4 菜单子板块1</h1>
-        <p>板块内容</p>
-    </div>
-    <div id="section4z2" class="container-fluid">
-        <h1>Section 4 菜单子板块2</h1>
+    <div id="section4" class="container-fluid section">
+        <h1>Section 4</h1>
         <p>板块内容</p>
     </div>
 </div>
 <!--内容部分结束-->
+<!--页脚部分-->
+<footer>
+    <div class="container-fluid">
+        <div class="footers">
+            <h1>这是页脚的预留部分</h1>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

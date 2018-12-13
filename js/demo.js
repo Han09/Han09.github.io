@@ -23,14 +23,13 @@ function media() {
     var result3 = window.matchMedia('(min-width:768px)');
     if (result1.matches) {
         console.log("大屏幕(>=1200)");//判断窗口状态，，会大量输出console，后期删除
-
-        navbar()
+        navbar();
     } else if (result2.matches) {
         console.log("中等屏幕(>=992&<=1200)");//判断窗口状态，，会大量输出console，后期删除
-        navbar()
+        navbar();
     } else if (result3.matches) {
         console.log("小屏幕(>=768&<=992)");//判断窗口状态，，会大量输出console，后期删除
-        navbar()
+        navbar();
     } else {
         console.log("超小屏幕(<=768)");//判断窗口状态，，会大量输出console，后期删除
     }
