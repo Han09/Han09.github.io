@@ -4,7 +4,7 @@ $(window).resize(function () {
 $(window).scroll(function () {
     media();
 })
-
+//导航条样式变化
 function navbar() {
     var top = $("html,body").scrollTop();
     if (top > 10) {
@@ -16,7 +16,7 @@ function navbar() {
         $(".navbar-default .navbar-nav > li > a ").removeClass("navbardea-gd", 2000)
     }
 }
-
+//媒体查询
 function media() {
     var result1 = window.matchMedia('(min-width:1200px)');
     var result2 = window.matchMedia('(min-width:992px)');
