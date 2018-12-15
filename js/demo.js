@@ -34,3 +34,4 @@ function media() {
         console.log("超小屏幕(<=768)");//判断窗口状态，，会大量输出console，后期删除
     }
 }
+//巨幕链接图标

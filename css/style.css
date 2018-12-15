@@ -48,7 +48,7 @@ html {
     outline: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .navbar {
         background-color: #242d3b;
     }
@@ -96,19 +96,27 @@ html {
 /*巨幕部分样式*/
 .jumbotron {
     background-image: url(../img/02.jpg);
-    background-position-x: left;
+    background-position-x: center;
     background-position-y: top;
     background-size: cover;
-    -webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */
-    -o-background-size: cover;/* 兼容Opera */
-    height: 110%;
+    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover; /* 兼容Opera */
+    height: 105%;
+    position: relative;
 }
 
 .mainT {
+    position: absolute;
+    width: 400px;
+    height: 150px;
     text-align: center;
-    margin-top: 150px;
+    top: 35%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -75px;
 }
-.mainTitle{
+
+.mainTitle {
     animation: MT 3s;
     -webkit-animation: MT 3s; /* Safari 和 Chrome */
     animation-fill-mode: forwards;
@@ -157,6 +165,46 @@ html {
         box-shadow: 0 0 10px 0 #000000;
     }
 }
+
+.linkicondiv {
+    position: relative;
+    width:220px;
+    left:50%;
+    margin-left: -110px;
+}
+
+.linkicondiv1,
+.linkicondiv2{
+    position: absolute;
+    height: 35px;
+    margin-top: 40px;
+
+}
+.linkicondiv1 a,
+.linkicondiv2 a {
+    display: inline-block;
+    margin: 3px 15px;
+    outline: none;
+}
+
+
+
+.beijingceng img,
+.fugaiceng img{
+    width: 35px;
+    height: 35px;
+}
+
+.Licon {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.Licon:hover {
+    opacity: 0;
+    transition-duration: 500ms;
+}
+
 
 /*页脚部分样式*/
 footer > div.container-fluid {
