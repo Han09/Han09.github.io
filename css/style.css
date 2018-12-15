@@ -205,6 +205,43 @@ html {
     transition-duration: 500ms;
 }
 
+.scroll-down{
+    color:white;
+    font-size: 40px;
+    position: absolute;
+    bottom: 50px;
+    left:50%;
+    margin-left: -20px;
+    animation: JT 3s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease;
+    text-shadow: black 3px 3px 2px;
+}
+@keyframes JT {
+    0%{
+    bottom:50px;
+     }
+    37% {
+        bottom:50px;
+    }
+    51%{
+        bottom: 60px;
+    }
+    58%{
+        bottom: 60px;
+    }
+    72% {
+        bottom: 48px;
+    }
+    86%
+    {
+        bottom: 55px;
+    }
+    100%{
+        bottom: 50px;
+    }
+}
+
 
 /*页脚部分样式*/
 footer > div.container-fluid {

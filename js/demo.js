@@ -4,6 +4,7 @@ $(window).resize(function () {
 $(window).scroll(function () {
     media();
 })
+
 //导航条样式变化
 function navbar() {
     var top = $("html,body").scrollTop();
@@ -16,6 +17,7 @@ function navbar() {
         $(".navbar-default .navbar-nav > li > a ").removeClass("navbardea-gd", 2000)
     }
 }
+
 //媒体查询
 function media() {
     var result1 = window.matchMedia('(min-width:1200px)');
@@ -34,4 +36,12 @@ function media() {
         console.log("超小屏幕(<=768)");//判断窗口状态，，会大量输出console，后期删除
     }
 }
-//巨幕链接图标
+
+//滚动箭头平滑效果
+$(document).ready(function () {
+    $(".scroll-down").click(function () {
+        var target_top = $("#section1").offset().top;
+        $("html,body").animate({scrollTop: target_top}, 1000);//跳转动画
+        $("html,body").scrollTop(target_top);
+    })
+});
