@@ -1,11 +1,13 @@
 //导航条样式变化
 function navbar() {
-    var top = $("html,body").scrollTop();
+    var top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+    console.log(top);
     if (top > 10) {
         $(".navbar").addClass("navbar-gd", 2000)
         $(".navbar-default .navbar-nav > li > a ").addClass("navbardea-gd", 2000)
         $(".navbar-toggle").addClass();
         $(".navbar-header").addClass();
+
     }
     else {
         $(".navbar").removeClass("navbar-gd", 2000)
