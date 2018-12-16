@@ -193,7 +193,7 @@ html {
     color:white;
     font-size: 40px;
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
     left:50%;
     margin-left: -20px;
     animation: JT 3s;
@@ -256,9 +256,7 @@ footer > div.container-fluid {
         color: black;
     }
     .jumbotron{
-        height: 55%;
+        height: 70%;
     }
-    .scroll-down{
-        visibility: hidden;
-    }
+
 }
