@@ -190,16 +190,13 @@ html {
 }
 
 .scroll-down{
-    color:white;
-    font-size: 40px;
     position: absolute;
-    bottom: 60px;
     left:50%;
+    margin-bottom: 30px;
     margin-left: -20px;
     animation: JT 3s;
     animation-iteration-count:infinite;
     animation-timing-function: ease;
-    text-shadow: black 3px 3px 2px;
 }
 @keyframes JT {
     0%{
