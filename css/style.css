@@ -75,12 +75,11 @@ html {
 
 /*巨幕部分样式*/
 .jumbotron {
-    background-image: url(../img/02.jpg);
-    background-position-x: center;
+    background: #4A4A4A url(../img/02.jpg);
+    background-position-x: left;
     background-position-y: top;
-    background-size: cover;
-    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
-    -o-background-size: cover; /* 兼容Opera */
+    background-size:150%;
+    background-repeat: no-repeat;
     height: 105%;
     position: relative;
 }
@@ -192,7 +191,7 @@ html {
 .scroll-down{
     position: absolute;
     left:50%;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
     margin-left: -26px;
     animation: JT 3s;
     animation-iteration-count:infinite;
