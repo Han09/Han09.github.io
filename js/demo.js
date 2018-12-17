@@ -38,6 +38,7 @@ function media() {
 }
 function mmve(){
     $('.jumbotron').mousemove(function(e){
+        //大屏幕时的巨幕移动效果
         var x = (e.pageX*-1/20);
         //  console.log("x="+x);
         var y = (e.pageY*-1/20);
@@ -46,7 +47,7 @@ function mmve(){
         $(this).css("background-position-y",y+"px");
     });
 }
-function mmve2(){
+function mmve2(){ //小屏幕时的巨幕移动效果
     $('.jumbotron').mousemove(function(){
         $(this).css("background-position-x","center");
         $(this).css("background-position-y","center");
@@ -66,7 +67,7 @@ $(document).ready(function () {
     media();
 
 });
-$(window).resize(function() {
+$(window).resize(function() { //窗口大小变化时执行
     media();
 });
 
