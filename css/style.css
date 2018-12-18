@@ -49,9 +49,13 @@ html {
 }
 
 /*内容部分*/
-.fenlantubiao,
+.fenlantubiao{
+    width:300px
+}
 .fenlan {
-    width: 300px;
+    width: auto;
+    display: inline-block;
+    margin-left:30px;
 }
 
 .neironglianjie {
@@ -103,7 +107,9 @@ html {
     color: white;
     font-weight: bold;
 }
-
+li{
+    line-height: 35px;
+}
 @keyframes MT {
     from {
         color: transparent;
@@ -269,6 +275,7 @@ footer > div.container-fluid {
     line-height: 60px;
 }
 
+
 /*媒体查询部分*/
 @media screen and (max-width: 767px) {
     .navbar {
@@ -290,6 +297,7 @@ footer > div.container-fluid {
     .jumbotron {
         height: 70%;
     }
+}
 /*主体内容部分*/
 
-}
+
