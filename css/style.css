@@ -49,24 +49,22 @@ html {
 }
 
 /*内容部分*/
-#section1 {
-    background-color: #CB4042;
-    height: 500px;
+.fenlantubiao,
+.fenlan {
+    width: 300px;
 }
 
-#section2 {
-    background-color: #A5A051;
-    height: 500px;
+.neironglianjie {
+    color: #444444;
+    font: 20px bold;
+    cursor: hand
 }
 
-#section3 {
-    background-color: #268785;
-    height: 500px;
-}
+.section {
+    height: auto;
+    margin-top: 40px;
+    padding: 50px;
 
-#section4 {
-    background: #8b81c3;
-    height: 500px;
 }
 
 .section:target {
@@ -75,12 +73,12 @@ html {
 
 /*巨幕部分样式*/
 .jumbotron {
-    background: #4A4A4A url(../img/02.jpg);
+    background: #4A4A4A url(../img/02.jpg) no-repeat;
     background-position-x: left;
-    background-position-y: top;
-    background-size:150%;
+    background-position-y: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 105%;
+    height: 100%;
     position: relative;
 }
 
@@ -100,7 +98,8 @@ html {
     -webkit-animation: MT 3s; /* Safari 和 Chrome */
     animation-fill-mode: forwards;
 }
-#jinrishici-sentence{
+
+#jinrishici-sentence {
     color: white;
     font-weight: bold;
 }
@@ -151,18 +150,19 @@ html {
 
 .linkicondiv {
     position: relative;
-    width:220px;
-    left:50%;
+    width: 220px;
+    left: 50%;
     margin-left: -110px;
 }
 
 .linkicondiv1,
-.linkicondiv2{
+.linkicondiv2 {
     position: absolute;
     height: 35px;
     margin-top: 40px;
 
 }
+
 .linkicondiv1 a,
 .linkicondiv2 a {
     display: inline-block;
@@ -170,10 +170,8 @@ html {
     outline: none;
 }
 
-
-
 .beijingceng img,
-.fugaiceng img{
+.fugaiceng img {
     width: 35px;
     height: 35px;
 }
@@ -188,40 +186,39 @@ html {
     transition-duration: 500ms;
 }
 
-.scroll-down{
+.scroll-down {
     position: absolute;
-    left:50%;
+    left: 50%;
     margin-bottom: 5%;
     margin-left: -26px;
     animation: JT 3s;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-timing-function: ease;
 }
+
 @keyframes JT {
-    0%{
-    bottom:50px;
-     }
-    37% {
-        bottom:50px;
+    0% {
+        bottom: 50px;
     }
-    51%{
+    37% {
+        bottom: 50px;
+    }
+    51% {
         bottom: 60px;
     }
-    58%{
+    58% {
         bottom: 60px;
     }
     72% {
         bottom: 48px;
     }
-    86%
-    {
+    86% {
         bottom: 55px;
     }
-    100%{
+    100% {
         bottom: 50px;
     }
 }
-
 
 /*页脚部分样式*/
 footer > div.container-fluid {
@@ -229,21 +226,59 @@ footer > div.container-fluid {
 }
 
 .footers {
+    margin-top: 50px;
+    height: 60px;
     background: #4A4A4A;
-    height: 300px;
-    border: 3px solid #c40000;
+    position: relative;
 }
 
+.footers p {
+    margin: 20px 30px 20px 50px;
+    color:white;
 
+}
+
+.namea{
+    color:navajowhite;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.namea:hover{
+    color:#d0104c;
+    font-weight: bold;
+}
+
+.mailto,
+.lou{
+    margin-right: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.mailto:hover {
+    color: navajowhite;
+}
+.footerimg{
+    width: 80px;
+    position: absolute;
+    left:20px;
+    top:-50px;
+}
+.footerdiv{
+    line-height: 60px;
+}
+
+/*媒体查询部分*/
 @media screen and (max-width: 767px) {
     .navbar {
         background-color: transparent;
     }
 
     .navbar-default .navbar-toggle {
-        background-color:transparent;
+        background-color: transparent;
         color: black;
-        border:2px solid black;
+        border: 2px solid black;
         font-weight: bold;
     }
 
@@ -251,8 +286,10 @@ footer > div.container-fluid {
         background-color: transparent;
         color: black;
     }
-    .jumbotron{
+
+    .jumbotron {
         height: 70%;
     }
+/*主体内容部分*/
 
 }
