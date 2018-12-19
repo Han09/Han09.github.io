@@ -283,6 +283,9 @@ footer > div.container-fluid {
     .navbar {
         background-color: transparent;
     }
+    .scroll-down{
+        display: none;
+    }
 
     .navbar-default .navbar-toggle {
         background-color: transparent;
