@@ -1,303 +1,158 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="UTF-8">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>i have a crush on you</title>
-    <style type="text/css">* {
-        margin: 0;
-        padding: 0;
-    }
-
-    body, ul, li, ol, dl, dd, p, h1, h2, h3, h4, h5, h6 {
-        margin: 0;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    img {
-        display: block;
-        border: none;
-    }
-
-    ol, ul {
-        list-style: none;
-    }
-
-    html {
-        height: 100%;
-        background: #153170;
-    }
-
-    .heart {
-        position: relative;
-        width: 300px;
-        height: 300px;
-        margin: 200px auto;
-        transform: rotate(45deg);
-        animation: move 2s infinite alternate;
-    }
-
-    .heart div {
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        background: red;
-    }
-
-    .heart .middle {
-        right: 0;
-        bottom: 0;
-        width: 200px;
-        height: 200px;
-    }
-
-    .heart .left {
-        left: 0;
-        bottom: 0;
-        border-radius: 50%;
-    }
-
-    .heart .right {
-        top: 0;
-        right: 0;
-        border-radius: 50%;
-    }
-
-    .heart p {
-        width: 200px;
-        height: 30px;
-        font: bold 25px/30px "";
-        text-align: center;
-        color: #fff;
-    }
-
-    .heart p {
-        position: absolute;
-        right: 0;
-        bottom: 85px;
-        transform: rotate(-45deg);
-    }
-
-    @-webkit-keyframes move {
-        10% {
-            transform: rotate(45deg) scale(1.1);
-            text-shadow: 0 0 5px #fff;
-        }
-        20% {
-            transform: rotate(45deg) scale(1.2);
-            text-shadow: 0 0 5px #fff;
-        }
-        30% {
-            transform: rotate(45deg) scale(1.3);
-            text-shadow: 0 0 5px #fff;
-        }
-        40% {
-            transform: rotate(45deg) scale(1.2);
-            text-shadow: 0 0 5px #fff;
-        }
-        50% {
-            transform: rotate(45deg) scale(1.3);
-            text-shadow: 0 0 5px #fff;
-        }
-        60% {
-            transform: rotate(45deg) scale(1.2);
-            text-shadow: 0 0 5px #fff;
-        }
-        70% {
-            transform: rotate(45deg) scale(1.3);
-            text-shadow: 0 0 5px #fff;
-        }
-        80% {
-            transform: rotate(45deg) scale(1.2);
-            text-shadow: 0 0 10px #fff;
-        }
-        90% {
-            transform: rotate(45deg) scale(1.1);
-            text-shadow: 0 0 5px #fff;
-        }
-    }</style>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+    <title>Han09</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="./img/favicon.png">
 </head>
-<body>
-<div class="heart" ondblclick="a()">
-    <div class="left"></div>
-    <div class="middle"></div>
-    <div class="right"></div>
-    <p>我喜欢你</p>
+
+
+<body data-spy="scroll" data-target="#daohang">
+<!--导航部分-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="blog-logo" src="./img/200.png" class="blog-logo">
+            </a>
+            <button type="button" class="navbar-toggle collapsed " data-toggle="collapse"
+                    data-target="#daohang" aria-expanded="false">
+                <span class="sr-only">切换导航</span>
+                <span class="menu">M E N U</span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="daohang">
+            <ul class="nav navbar-nav" role="tablist">
+                <li><a href="#">首页<span class="sr-only">(current)</span></a></li>
+                <li><a href="#section1">我的博客</a></li>
+                <li><a href="#section2">我的其他网站</a></li>
+                <li><a href="#section3">关于本站</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">联系我<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mailto:microsoftsony@aliyun.com">我的邮箱</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--导航部分结束-->
+
+<!--巨幕-->
+<div class="jumbotron">
+    <div class="container-fluid mainT">
+        <h1 class="mainTitle">Han09</h1>
+        <h4 id="jinrishici-sentence">Σ(っ °Д °;)っ</h4>
+        <div class="linkicondiv">
+            <div class="linkicondiv2">
+                <a class="beijingceng github" target="_blank" href="https://github.com/Han09">
+                    <img class="Liconx" src="./img/LinkIcon/GitHub2.svg" type="image/svg+xml" alt="gitHub"
+                         title="github">
+                </a>
+                <a class="beijingceng weibo" target="_blank" href="https://weibo.com/u/6011473374">
+                    <img class="Liconx" src="./img/LinkIcon/weibo2.svg" type="image/svg+xml" alt="新浪微博" title="新浪微博">
+                </a>
+                <a class="beijingceng coolapk" target="_blank" href="https://www.coolapk.com/u/653178">
+                    <img class="Liconx" src="./img/LinkIcon/coolapk2.svg" type="image/svg+xml" alt="酷安网" title="酷安网">
+                </a>
+            </div>
+            <div class="linkicondiv1">
+                <a class="fugaiceng github" target="_blank" href="https://github.com/Han09">
+                    <img class="Licon" src="./img/LinkIcon/GitHub.svg" type="image/svg+xml" alt="gitHub" title="github">
+                </a>
+                <a class="fugaiceng weibo" target="_blank" href="https://weibo.com/u/6011473374">
+                    <img class="Licon" src="./img/LinkIcon/weibo.svg" type="image/svg+xml" alt="新浪微博" title="新浪微博">
+                </a>
+                <a class="fugaiceng coolapk" target="_blank" href="https://www.coolapk.com/u/653178">
+                    <img class="Licon" src="./img/LinkIcon/coolapk.svg" type="image/svg+xml" alt="酷安网" title="酷安网">
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <a href="#section1">
+        <img class="scroll-down" src="./img/down.svg" type="image/svg+xml">
+    </a>
+</div>
+
+<!--巨幕结束-->
+<!--内容部分-->
+<div class="container">
+    <div id="section1" class="container-fluid section">
+        <img class="fenlantubiao pull-right" src="./img/gl.svg" type="image/svg+xml">
+        <div class="pull-left fenlan ">
+            <h1><img class="xiaotubiao" src="./img/gl.svg" type="image/svg+xml">我的博客</h1>
+            <ul>
+                <a class="neironglianjie" href="https://han09.github.io/blog/2018/12/19/test/" target="_blank">
+                    <li><span>Hello World</span></li>
+                </a>
+                <a class="neironglianjie" href="https://han09.github.io/blog/2018/12/19/test/" target="_blank">
+                    <li><span>Hello World</span></li>
+                </a>
+                <a class="neironglianjie" href="https://han09.github.io/blog/2018/12/19/test/" target="_blank">
+                    <li><span>Hello World</span></li>
+                </a>
+                <a class="neironglianjie" href="https://han09.github.io/blog/2018/12/19/test/" target="_blank">
+                    <li><span>Hello World</span></li>
+                </a>
+                <a class="neironglianjie" href="https://han09.github.io/blog/2018/12/19/test/" target="_blank">
+                    <li><span>Hello World</span></li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div id="section2" class="container-fluid section">
+        <img class="fenlantubiao pull-left" src="./img/wenjianjia.svg" type="image/svg+xml">
+        <div class=" fenlan ">
+            <h1><img class="xiaotubiao" src="./img/wenjianjia.svg" type="image/svg+xml">我的其他网站</h1>
+            <ul>
+                <li>已计划的导航网站；制作中</li>
+                <li>暂无</li>
+                <li>暂无</li>
+                <li>暂无</li>
+                <li>暂无</li>
+            </ul>
+        </div>
+    </div>
+    <div id="section3" class="container-fluid section">
+        <img class="fenlantubiao pull-right" src="./img/moshui.svg" type="image/svg+xml">
+        <div class="pull-leftfenlan">
+            <h1><img class="xiaotubiao" src="./img/moshui.svg" type="image/svg+xml">关于本站</h1>
+            <ul>
+                <li>部分图标素材来源：<br><a class="neironglianjie" href="https://www.iconfont.cn/" target="_blank">Iconfont-阿里矢量图标库</a></li>
+                <li>使用 <a class="neironglianjie" href="https://github.com/" target="_blank">GitHub</a> Pages发布</li>
+                <li>博客部分使用 <a class="neironglianjie" href="https://hexo.io/zh-cn/" target="_blank">Hexo</a>框架</li>
+                <li>作者前端新手，请多指教。😄</li>
+                <li>如果您可以为我提供工作岗位，请<a class="neironglianjie" href="mailto:microsoftsony@aliyun.com">联系作者</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
 </body>
-<script>
-    var i = 0;
-
-    function a() {
-        i++;
-        if (i >= 10) {
-            alert('你若认真，我便真心');
-            i = 0;
-        }
-    }
-</script>
+<!--内容部分结束-->
+<!--页脚部分-->
+<footer>
+    <div class="container-fluid">
+        <div class="footers">
+            <img class="footerimg" src="./img/jiazi.svg">
+            <div class="pull-right footerdiv">
+                <span class="lou">2018 © <a class="namea"
+                                                       href="https://github.com/Han09">Han09</a></span>
+                <a class="mailto" href="mailto:microsoftsony@aliyun.com">反馈</a>
+                <a class="mailto" href="mailto:microsoftsony@aliyun.com">联系我</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/bootstrap.js"></script>
+<script src="js/demo.js"></script>
+<script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"
+        integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE="
+        crossorigin="anonymous"></script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 </html>
-
-<!--<!DOCTYPE html>-->
-<!--<html lang="UTF-8">-->
-<!--<head>-->
-    <!--<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">-->
-    <!--<title>Han09</title>-->
-    <!--<script src="js/jquery-3.3.1.js"></script>-->
-    <!--<link href="css/bootstrap.css" rel="stylesheet">-->
-    <!--<link href="css/style.css" rel="stylesheet">-->
-    <!--<link rel="icon" href="./img/favicon.png">-->
-<!--</head>-->
-
-
-<!--<body data-spy="scroll" data-target="#daohang">-->
-<!--&lt;!&ndash;导航部分&ndash;&gt;-->
-<!--<nav class="navbar navbar-default navbar-fixed-top">-->
-    <!--<div class="container-fluid">-->
-        <!--<div class="navbar-header">-->
-            <!--<a class="navbar-brand" href="#">-->
-                <!--<img alt="blog-logo" src="./img/200.png" class="blog-logo">-->
-            <!--</a>-->
-            <!--<button type="button" class="navbar-toggle collapsed " data-toggle="collapse"-->
-                    <!--data-target="#daohang" aria-expanded="false">-->
-                <!--<span class="sr-only">切换导航</span>-->
-                <!--<span class="menu">M E N U</span>-->
-            <!--</button>-->
-        <!--</div>-->
-        <!--<div class="collapse navbar-collapse" id="daohang">-->
-            <!--<ul class="nav navbar-nav" role="tablist">-->
-                <!--<li><a href="#">首页<span class="sr-only">(current)</span></a></li>-->
-                <!--<li><a href="#section1">我的博客</a></li>-->
-                <!--<li><a href="#section2">我的其他网站</a></li>-->
-                <!--<li><a href="#section3">关于本站</a></li>-->
-                <!--<li class="dropdown">-->
-                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"-->
-                       <!--aria-expanded="false">联系我<span class="caret"></span></a>-->
-                    <!--<ul class="dropdown-menu">-->
-                        <!--<li><a href="mailto:microsoftsony@aliyun.com">我的邮箱</a></li>-->
-                    <!--</ul>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</nav>-->
-<!--&lt;!&ndash;导航部分结束&ndash;&gt;-->
-
-<!--&lt;!&ndash;巨幕&ndash;&gt;-->
-<!--<div class="jumbotron">-->
-    <!--<div class="container-fluid mainT">-->
-        <!--<h1 class="mainTitle">Han09</h1>-->
-        <!--<h4 id="jinrishici-sentence">Σ(っ °Д °;)っ</h4>-->
-        <!--<div class="linkicondiv">-->
-            <!--<div class="linkicondiv2">-->
-                <!--<a class="beijingceng github" target="_blank" href="https://github.com/Han09">-->
-                    <!--<img class="Liconx" src="./img/LinkIcon/GitHub2.svg" type="image/svg+xml" alt="gitHub"-->
-                         <!--title="github">-->
-                <!--</a>-->
-                <!--<a class="beijingceng weibo" target="_blank" href="https://weibo.com/u/6011473374">-->
-                    <!--<img class="Liconx" src="./img/LinkIcon/weibo2.svg" type="image/svg+xml" alt="新浪微博" title="新浪微博">-->
-                <!--</a>-->
-                <!--<a class="beijingceng coolapk" target="_blank" href="https://www.coolapk.com/u/653178">-->
-                    <!--<img class="Liconx" src="./img/LinkIcon/coolapk2.svg" type="image/svg+xml" alt="酷安网" title="酷安网">-->
-                <!--</a>-->
-            <!--</div>-->
-            <!--<div class="linkicondiv1">-->
-                <!--<a class="fugaiceng github" target="_blank" href="https://github.com/Han09">-->
-                    <!--<img class="Licon" src="./img/LinkIcon/GitHub.svg" type="image/svg+xml" alt="gitHub" title="github">-->
-                <!--</a>-->
-                <!--<a class="fugaiceng weibo" target="_blank" href="https://weibo.com/u/6011473374">-->
-                    <!--<img class="Licon" src="./img/LinkIcon/weibo.svg" type="image/svg+xml" alt="新浪微博" title="新浪微博">-->
-                <!--</a>-->
-                <!--<a class="fugaiceng coolapk" target="_blank" href="https://www.coolapk.com/u/653178">-->
-                    <!--<img class="Licon" src="./img/LinkIcon/coolapk.svg" type="image/svg+xml" alt="酷安网" title="酷安网">-->
-                <!--</a>-->
-            <!--</div>-->
-
-        <!--</div>-->
-    <!--</div>-->
-    <!--<a href="#section1">-->
-        <!--<img class="scroll-down" src="./img/down.svg" type="image/svg+xml">-->
-    <!--</a>-->
-<!--</div>-->
-
-<!--&lt;!&ndash;巨幕结束&ndash;&gt;-->
-<!--&lt;!&ndash;内容部分&ndash;&gt;-->
-<!--<div class="container">-->
-    <!--<div id="section1" class="container-fluid section">-->
-        <!--<img class="fenlantubiao pull-right" src="./img/gl.svg" type="image/svg+xml">-->
-        <!--<div class="pull-left fenlan ">-->
-            <!--<h1><img class="xiaotubiao" src="./img/gl.svg" type="image/svg+xml">我的博客</h1>-->
-            <!--<ul>-->
-                <!--<a class="neironglianjie" href="https://han09.github.io/blog/2018/12/19/test/" target="_blank">-->
-                    <!--<li><span>Hello World</span></li>-->
-                <!--</a>-->
-                <!--<a class="neironglianjie" href="https://han09.github.io/blog/2018/12/19/test/" target="_blank">-->
-                    <!--<li><span>Hello World</span></li>-->
-                <!--</a>-->
-                <!--<a class="neironglianjie" href="https://han09.github.io/blog/2018/12/19/test/" target="_blank">-->
-                    <!--<li><span>Hello World</span></li>-->
-                <!--</a>-->
-                <!--<a class="neironglianjie" href="https://han09.github.io/blog/2018/12/19/test/" target="_blank">-->
-                    <!--<li><span>Hello World</span></li>-->
-                <!--</a>-->
-                <!--<a class="neironglianjie" href="https://han09.github.io/blog/2018/12/19/test/" target="_blank">-->
-                    <!--<li><span>Hello World</span></li>-->
-                <!--</a>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div id="section2" class="container-fluid section">-->
-        <!--<img class="fenlantubiao pull-left" src="./img/wenjianjia.svg" type="image/svg+xml">-->
-        <!--<div class=" fenlan ">-->
-            <!--<h1><img class="xiaotubiao" src="./img/wenjianjia.svg" type="image/svg+xml">我的其他网站</h1>-->
-            <!--<ul>-->
-                <!--<li>已计划的导航网站；制作中</li>-->
-                <!--<li>暂无</li>-->
-                <!--<li>暂无</li>-->
-                <!--<li>暂无</li>-->
-                <!--<li>暂无</li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div id="section3" class="container-fluid section">-->
-        <!--<img class="fenlantubiao pull-right" src="./img/moshui.svg" type="image/svg+xml">-->
-        <!--<div class="pull-leftfenlan">-->
-            <!--<h1><img class="xiaotubiao" src="./img/moshui.svg" type="image/svg+xml">关于本站</h1>-->
-            <!--<ul>-->
-                <!--<li>部分图标素材来源：<br><a class="neironglianjie" href="https://www.iconfont.cn/" target="_blank">Iconfont-阿里矢量图标库</a></li>-->
-                <!--<li>使用 <a class="neironglianjie" href="https://github.com/" target="_blank">GitHub</a> Pages发布</li>-->
-                <!--<li>博客部分使用 <a class="neironglianjie" href="https://hexo.io/zh-cn/" target="_blank">Hexo</a>框架</li>-->
-                <!--<li>作者前端新手，请多指教。😄</li>-->
-                <!--<li>如果您可以为我提供工作岗位，请<a class="neironglianjie" href="mailto:microsoftsony@aliyun.com">联系作者</a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-<!--</body>-->
-<!--&lt;!&ndash;内容部分结束&ndash;&gt;-->
-<!--&lt;!&ndash;页脚部分&ndash;&gt;-->
-<!--<footer>-->
-    <!--<div class="container-fluid">-->
-        <!--<div class="footers">-->
-            <!--<img class="footerimg" src="./img/jiazi.svg">-->
-            <!--<div class="pull-right footerdiv">-->
-                <!--<span class="lou">2018 © <a class="namea"-->
-                                                       <!--href="https://github.com/Han09">Han09</a></span>-->
-                <!--<a class="mailto" href="mailto:microsoftsony@aliyun.com">反馈</a>-->
-                <!--<a class="mailto" href="mailto:microsoftsony@aliyun.com">联系我</a>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</footer>-->
-<!--<script src="js/bootstrap.js"></script>-->
-<!--<script src="js/demo.js"></script>-->
-<!--<script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"-->
-        <!--integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE="-->
-        <!--crossorigin="anonymous"></script>-->
-<!--<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>-->
-<!--</html>-->
