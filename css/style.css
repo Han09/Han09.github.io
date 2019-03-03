@@ -9,6 +9,7 @@ body,
 html {
     height: 100%;
 }
+
 /*导航条部分*/
 .blog-logo {
     width: 50px;
@@ -48,13 +49,14 @@ html {
 }
 
 /*内容部分*/
-.fenlantubiao{
-    width:300px;
+.fenlantubiao {
+    width: 300px;
 }
+
 .fenlan {
     width: auto;
     display: inline-block;
-    margin-left:30px;
+    margin-left: 30px;
 }
 
 .neironglianjie {
@@ -76,7 +78,7 @@ html {
 
 /*巨幕部分样式*/
 .jumbotron {
-    background: #4A4A4A url(../img/02.jpg) no-repeat;
+    background: #4A4A4A url("https://pic.superbed.cn/item/5c7bcd703a213b04171612e6") no-repeat;
     background-position-x: left;
     background-position-y: center;
     background-size: cover;
@@ -106,9 +108,11 @@ html {
     color: white;
     font-weight: bold;
 }
-li{
+
+li {
     line-height: 35px;
 }
+
 @keyframes MT {
     from {
         color: transparent;
@@ -239,23 +243,23 @@ footer > div.container-fluid {
 
 .footers p {
     margin: 20px 30px 20px 50px;
-    color:white;
+    color: white;
 
 }
 
-.namea{
-    color:navajowhite;
+.namea {
+    color: navajowhite;
     font-weight: bold;
     margin-right: 10px;
 }
 
-.namea:hover{
-    color:#d0104c;
+.namea:hover {
+    color: #d0104c;
     font-weight: bold;
 }
 
 .mailto,
-.lou{
+.lou {
     margin-right: 10px;
     font-weight: bold;
     color: white;
@@ -264,26 +268,29 @@ footer > div.container-fluid {
 .mailto:hover {
     color: navajowhite;
 }
-.footerimg{
+
+.footerimg {
     width: 80px;
     position: absolute;
-    left:20px;
-    top:-50px;
-}
-.footerdiv{
-    line-height: 60px;
-}
-.xiaotubiao{
-    display: none;
+    left: 20px;
+    top: -50px;
 }
 
+.footerdiv {
+    line-height: 60px;
+}
+
+.xiaotubiao {
+    display: none;
+}
 
 /*媒体查询部分*/
 @media screen and (max-width: 767px) {
     .navbar {
         background-color: transparent;
     }
-    .scroll-down{
+
+    .scroll-down {
         display: none;
     }
 
@@ -302,20 +309,25 @@ footer > div.container-fluid {
     .jumbotron {
         height: 70%;
     }
+
     /*主体内容部分*/
-    .section{
-        padding:0;
+    .section {
+        padding: 0;
     }
-    .fenlantubiao{
-       display: none;
+
+    .fenlantubiao {
+        display: none;
     }
-    .fenlan{
+
+    .fenlan {
         margin-left: 0;
     }
-    .pull-left{
+
+    .pull-left {
         margin-left: 0;
     }
-    .xiaotubiao{
+
+    .xiaotubiao {
         width: 40px;
         display: inline-block;
     }
