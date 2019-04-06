@@ -49,8 +49,6 @@ $(document).ready(function () {
 
 
 });
-
-
 //文本动态显示
 var hgroups = $('.items>hgroup')
 var benchmark = window.innerHeight/1.8;
@@ -63,5 +61,3 @@ function hgroupfunction (){
         }
     }
 }
-//文本动态显示
-// var c = $('.item>hgroup').getBoundingClientRect().x;

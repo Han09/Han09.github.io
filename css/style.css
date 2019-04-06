@@ -416,8 +416,6 @@ footer > div.container-fluid {
     opacity: 1 !important;
 }
 
-
-
 @media screen and (max-width: 1024px) {
     .jumbotron {
         height: 70%;
