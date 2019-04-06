@@ -1,8 +1,9 @@
 /*页面整体*/
 body {
-    background: #f5f5f5;
+    background: #ffffff;
     position: relative;
     overflow-y: scroll;
+    overflow-x:hidden ;
 }
 
 body,
@@ -17,6 +18,7 @@ html {
 }
 
 .navbar {
+    width: 100%;
     background-color: transparent;
     border: 0;
 }
@@ -48,54 +50,25 @@ html {
     outline: none;
 }
 
-/*内容部分*/
-.fenlantubiao {
-    width: 300px;
-}
-
-.fenlan {
-    width: auto;
-    display: inline-block;
-    margin-left: 30px;
-}
-
-.neironglianjie {
-    color: #444444;
-    font: 20px bold;
-    cursor: hand
-}
-
-.section {
-    height: auto;
-    margin-top: 40px;
-    padding: 50px;
-
-}
-
 .section:target {
     padding-top: 50px;
 }
 
 /*巨幕部分样式*/
 .jumbotron {
-    background: #4A4A4A url("https://pic.superbed.cn/item/5c7bcd703a213b04171612e6") no-repeat;
-    background-position-x: left;
-    background-position-y: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
+    /*background: #4A4A4A url("https://pic.superbed.cn/item/5c7bcd703a213b04171612e6") no-repeat;*/
+    background: #4A4A4A url("https://pic.superbed.cn/item/5ca34ff53a213b0417930bf0") no-repeat 0/cover ;
+    background-size: 110%;
+    height: 80%;
     position: relative;
 }
 
 .mainT {
     position: absolute;
-    width: 400px;
+    width: 100%;
     height: 150px;
     text-align: center;
-    top: 35%;
-    left: 50%;
-    margin-left: -200px;
-    margin-top: -75px;
+    top: 30%;
 }
 
 .mainTitle {
@@ -305,33 +278,153 @@ footer > div.container-fluid {
         background-color: transparent;
         color: black;
     }
+}
 
-    .jumbotron {
-        height: 70%;
-    }
 
-    /*主体内容部分*/
-    .section {
-        padding: 0;
-    }
+/*内容部分二次更新*/
+.container{
+    padding:0;
+}
+.items{
+    background: white;
+    border: 1px solid transparent;
+}
+#section1{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:60px !important;
+}
 
-    .fenlantubiao {
-        display: none;
-    }
+#section1 hgroup{
+    padding-left: 6%;
+    flex-grow: 1;
+    display: block;
+}
 
-    .fenlan {
-        margin-left: 0;
-    }
+#MyCard{
+    height: 200px;
+    flex-grow: 1;
+    padding-top: 20px;
+}
+.sf-usercard{
+    width: 280px;
+    margin:0 auto;
+}
+#section2>hgroup{
+    padding-left: 6%;
+    padding-top: 60px;
+    display: block;
+}
 
-    .pull-left {
-        margin-left: 0;
-    }
 
-    .xiaotubiao {
-        width: 40px;
-        display: inline-block;
+#retrieval_father{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#retrieval{
+    width: 500px;
+    padding: 30px;
+    flex-grow: 1;
+}
+#retrieval img{
+    width: 100%;
+    box-shadow: 3px 3px 10px black;
+}
+#retrieval_father hgroup{
+    margin-top: 20px;
+    width: 30vw;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#sony_father{
+    display: flex;
+    flex-wrap: wrap;
+}
+#sony_father>hgroup{
+    margin-top: 50px;
+    flex-grow: 1;
+    order: 2;
+    text-align: center;
+}
+#sony{
+    text-align: center;
+    flex-grow: 1;
+}
+#sony>img{
+    height: 400px;
+}
+
+#lately_father{
+    display: flex;
+    flex-wrap: wrap;
+}
+#lately_father>hgroup{
+    margin-top: 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+#lately>img{
+    max-width: 90vw;
+    flex-grow: 1;
+}
+
+#section3{
+    margin-top: 60px;
+}
+#section3>h1{
+    padding-left: 6%;
+}
+
+@media screen and (max-width: 767px) {
+    #MyCard{
+        max-width: 90vw;
     }
+    #sony_father>hgroup{
+        order: 0;
+    }
+}
+
+#textWindow{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.topLine{
+    height: 35px;
+    width: 250px;
+    border: 8px solid rgba(203, 203, 203, 0.53);
+    border-bottom: 0px;
+    margin: 0 auto;
+}
+
+.bottomLine{
+    height: 35px;
+    width: 250px;
+    border: 8px solid rgba(203, 203, 203, 0.53);
+    border-top: 0px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.items>hgroup{
+    opacity: 0 ;
+    transition: opacity 1500ms;
+}
+.show{
+    opacity: 1 !important;
 }
 
 
 
+@media screen and (max-width: 1024px) {
+    .jumbotron {
+        height: 70%;
+        min-height: 300px;
+        background-size: cover;
+        -ms-background-position-x: center;
+        background-position-x: center;
+        background-position-y: center;
+    }
+}

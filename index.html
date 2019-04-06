@@ -59,15 +59,18 @@
                          title="github">
                 </a>
                 <a class="beijingceng weibo" target="_blank" href="https://weibo.com/u/6011473374">
-                    <img class="Liconx" src="./img/LinkIcon/weibo2.svg" type="image/svg+xml" alt="新浪微博" title="新浪微博">
+                    <img class="Liconx" src="./img/LinkIcon/weibo2.svg" type="image/svg+xml" alt="新浪微博"
+                         title="新浪微博">
                 </a>
                 <a class="beijingceng coolapk" target="_blank" href="https://www.coolapk.com/u/653178">
-                    <img class="Liconx" src="./img/LinkIcon/coolapk2.svg" type="image/svg+xml" alt="酷安网" title="酷安网">
+                    <img class="Liconx" src="./img/LinkIcon/coolapk2.svg" type="image/svg+xml" alt="酷安网"
+                         title="酷安网">
                 </a>
             </div>
             <div class="linkicondiv1">
                 <a class="fugaiceng github" target="_blank" href="https://github.com/Han09">
-                    <img class="Licon" src="./img/LinkIcon/GitHub.svg" type="image/svg+xml" alt="gitHub" title="github">
+                    <img class="Licon" src="./img/LinkIcon/GitHub.svg" type="image/svg+xml" alt="gitHub"
+                         title="github">
                 </a>
                 <a class="fugaiceng weibo" target="_blank" href="https://weibo.com/u/6011473374">
                     <img class="Licon" src="./img/LinkIcon/weibo.svg" type="image/svg+xml" alt="新浪微博" title="新浪微博">
@@ -86,63 +89,85 @@
 <!--巨幕结束-->
 <!--内容部分-->
 <div class="container">
-    <div id="section1" class="container-fluid section">
-        <img class="fenlantubiao pull-right" src="./img/gl.svg" type="image/svg+xml">
-        <div class="pull-left fenlan ">
-            <h1><img class="xiaotubiao" src="./img/gl.svg" type="image/svg+xml">我的博客</h1>
-            <ul>
-                <a class="neironglianjie" href="https://segmentfault.com/u/han09/notes" target="_blank">
-                    <li><span>博客转移至思否segmentfault.com</span></li>
-                </a>
-                <div>
-                    <script src='//w.segmentfault.com/card/1030000016800035.js?w=0&3rd=1&bg=0&bd=DDDDDD&cl=333333&btn=009a61&noBtn=0'></script>
+    <div id="section1" class="item" style="padding-top: calc(10vh - 30px);">
+        <hgroup>
+            <h1>我的笔记和博客</h1>
+            <span>使用思否<a href="https://segmentfault.com/u/han09">SegmentFault.com</a>社区</span>
+        </hgroup>
+        <div id="MyCard">
+            <script src='//w.segmentfault.com/card/1030000016800035.js?w=0&3rd=1&bg=0&bd=DDDDDD&cl=333333&btn=009a61&noBtn=0'></script>
+        </div>
+    </div>
+    <div id="section2" class="item">
+        <hgroup>
+            <h1>我的其他网站</h1>
+        </hgroup>
+        <div class="items" id="retrieval_father">
+            <hgroup>
+                <h2>Retrieval.检索</h2>
+                <span>搜索聚合工具 Google主页仿站</span>
+                <br>
+                <span>使用原生JS,CSS</span>
+                <br>
+                <div id="textWindow">
+                    <div class="topLine">
+                    </div>
+                    <h4>聚合百度·Google·淘宝·Bing搜索引擎</h4>
+                    <div class="bottomLine">
+                        <h5>动态获取搜索词提示和icon</h5>
+                    </div>
                 </div>
-
-            </ul>
+            </hgroup>
+            <div id="retrieval">
+                <img src="https://pic.superbed.cn/item/5ca4ade03a213b0417a12649">
+            </div>
+        </div>
+        <div class="items" id="sony_father">
+            <hgroup>
+                <h2>Sony中国 仿站</h2>
+                <span>Vue练习小项目，为原官网添加了响应式布局</span>
+            </hgroup>
+            <div id="sony">
+                <img src="https://pic.superbed.cn/item/5ca83f4c3a213b0417c11abd">
+            </div>
+        </div>
+        <div class="items" id="lately_father">
+            <hgroup>
+                <h2>近期学习项目</h2>
+                <span>HBuilderX/uni-app</span>
+            </hgroup>
+            <div id="lately">
+                <img src="https://pic.superbed.cn/item/5ca820db3a213b0417c006e4">
+            </div>
         </div>
     </div>
-    <div id="section2" class="container-fluid section">
-        <img class="fenlantubiao pull-left" src="./img/wenjianjia.svg" type="image/svg+xml">
-        <div class=" fenlan ">
-            <h1><img class="xiaotubiao" src="./img/wenjianjia.svg" type="image/svg+xml">我的其他网站</h1>
-            <ul>
-                <li><a href="https://www.retrieval.online/">https://www.retrieval.online/</a> Retrieval检索</li>
-                <li><a href="./Subdirectory/MySony/index.html">索尼仿站 ：</a> Vue练手项目</li>
-                <li>暂无</li>
-                <li>暂无</li>
-                <li>暂无</li>
-            </ul>
-        </div>
-    </div>
-    <div id="section3" class="container-fluid section">
-        <img class="fenlantubiao pull-right" src="./img/moshui.svg" type="image/svg+xml">
-        <div class="pull-leftfenlan">
-            <h1><img class="xiaotubiao" src="./img/moshui.svg" type="image/svg+xml">关于本站</h1>
-            <ul>
-                <li>全部使用 <a class="neironglianjie" href="https://github.com/" target="_blank">GitHub</a> Pages发布</li>
-                <li>前端新新手，请多指教。😄</li>
-                <li>近期的学习任务：HBuilderX/uni-app</li>
-                <li>如果您可以为我提供工作岗位，请<a class="neironglianjie" href="mailto:microsoftsony@aliyun.com">联系作者</a></li>
-            </ul>
-        </div>
+    <div id="section3" class="item">
+        <h1>关于本站</h1>
+        <ul style="margin-left: 10%;">
+            <li>使用BootStrap和JQuery，通过 <a class="neironglianjie" href="https://github.com/" target="_blank">GitHub</a>Pages 发布</li>
+            <li>前端新新手，请多指教。😄</li>
+            <li>非设计人员，界面简陋。请多谅解</li>
+            <li>如果您可以为我提供工作岗位，请<a class="neironglianjie" href="mailto:microsoftsony@aliyun.com">联系作者</a></li>
+        </ul>
     </div>
 </div>
-</body>
-<!--内容部分结束-->
-<!--页脚部分-->
 <footer>
     <div class="container-fluid">
         <div class="footers">
             <img class="footerimg" src="./img/jiazi.svg">
             <div class="pull-right footerdiv">
                 <span class="lou">2018-2019 © <a class="namea"
-                                                       href="https://github.com/Han09">Han09</a></span>
+                                                 href="https://github.com/Han09">Han09</a></span>
                 <a class="mailto" href="mailto:microsoftsony@aliyun.com">反馈</a>
                 <a class="mailto" href="mailto:microsoftsony@aliyun.com">联系我</a>
             </div>
         </div>
     </div>
 </footer>
+</body>
+<!--内容部分结束-->
+<!--页脚部分-->
+
 <script src="js/bootstrap.js"></script>
 <script src="js/demo.js"></script>
 </html>
