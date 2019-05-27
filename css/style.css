@@ -3,7 +3,7 @@ body {
     background: #ffffff;
     position: relative;
     overflow-y: scroll;
-    overflow-x:hidden ;
+    overflow-x: hidden;
 }
 
 body,
@@ -56,8 +56,7 @@ html {
 
 /*巨幕部分样式*/
 .jumbotron {
-    /*background: #4A4A4A url("https://pic.superbed.cn/item/5c7bcd703a213b04171612e6") no-repeat;*/
-    background: #4A4A4A url("https://pic.superbed.cn/item/5ca34ff53a213b0417930bf0") no-repeat 0/cover ;
+    background: #4A4A4A url("https://s2.ax1x.com/2019/05/25/VA1K5n.jpg") no-repeat 0/cover;
     background-size: 110%;
     height: 80%;
     position: relative;
@@ -282,116 +281,130 @@ footer > div.container-fluid {
 
 
 /*内容部分二次更新*/
-.container{
-    padding:0;
+.container {
+    padding: 0;
 }
-.items{
+
+.items {
     background: white;
     border: 1px solid transparent;
 }
-#section1{
+
+#section1 {
     display: flex;
     flex-wrap: wrap;
-    padding-top:60px !important;
+    padding-top: 60px !important;
 }
 
-#section1 hgroup{
+#section1 hgroup {
     padding-left: 6%;
     flex-grow: 1;
     display: block;
 }
 
-#MyCard{
+#MyCard {
     height: 200px;
     flex-grow: 1;
     padding-top: 20px;
 }
-.sf-usercard{
+
+.sf-usercard {
     width: 280px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-#section2>hgroup{
+
+#section2 > hgroup {
     padding-left: 6%;
     padding-top: 60px;
     display: block;
 }
 
 
-#retrieval_father{
+#retrieval_father {
     display: flex;
     flex-wrap: wrap;
 }
 
-#retrieval{
+#retrieval {
     width: 500px;
     padding: 30px;
     flex-grow: 1;
 }
-#retrieval img{
+
+#retrieval img {
     width: 100%;
     box-shadow: 3px 3px 10px black;
 }
-#retrieval_father hgroup{
+
+#retrieval_father hgroup {
     margin-top: 20px;
     width: 30vw;
     flex-grow: 1;
     text-align: center;
 }
 
-#sony_father{
+#sony_father {
     display: flex;
     flex-wrap: wrap;
 }
-#sony_father>hgroup{
+
+#sony_father > hgroup {
     margin-top: 50px;
     flex-grow: 1;
     order: 2;
     text-align: center;
 }
-#sony{
+
+#sony {
     text-align: center;
     flex-grow: 1;
 }
-#sony>img{
+
+#sony > img {
     height: 400px;
 }
 
-#lately_father{
+#lately_father {
     display: flex;
     flex-wrap: wrap;
 }
-#lately_father>hgroup{
+
+#lately_father > hgroup {
     margin-top: 20px;
     flex-grow: 1;
     text-align: center;
 }
-#lately>img{
+
+#lately > img {
     max-width: 90vw;
     flex-grow: 1;
 }
 
-#section3{
+#section3 {
     margin-top: 60px;
 }
-#section3>h1{
+
+#section3 > h1 {
     padding-left: 6%;
 }
 
 @media screen and (max-width: 767px) {
-    #MyCard{
+    #MyCard {
         max-width: 90vw;
     }
-    #sony_father>hgroup{
+
+    #sony_father > hgroup {
         order: 0;
     }
 }
 
-#textWindow{
+#textWindow,
+#textWindow2 {
     margin-top: 20px;
     text-align: center;
 }
 
-.topLine{
+.topLine {
     height: 35px;
     width: 250px;
     border: 8px solid rgba(203, 203, 203, 0.53);
@@ -399,7 +412,7 @@ footer > div.container-fluid {
     margin: 0 auto;
 }
 
-.bottomLine{
+.bottomLine {
     height: 35px;
     width: 250px;
     border: 8px solid rgba(203, 203, 203, 0.53);
@@ -408,11 +421,12 @@ footer > div.container-fluid {
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
 }
 
-.items>hgroup{
-    opacity: 0 ;
+.items > hgroup {
+    opacity: 0;
     transition: opacity 1500ms;
 }
-.show{
+
+.show {
     opacity: 1 !important;
 }
 
