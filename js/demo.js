@@ -2,21 +2,16 @@
 function navbar() {
     var top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
     $('.navbar-toggle').click(function () {
-        $(".navbar").addClass("navbar-gd", 2000)
-        $(".navbar-default .navbar-nav > li > a ").addClass("navbardea-gd", 2000)
-        $(".navbar-toggle").addClass();
-        $(".navbar-header").addClass();
+        $(".navbar").addClass("navbar-gd")
+        $(".navbar-default .navbar-nav > li > a ").addClass("navbardea-gd")
     });
     //  console.log(top);
     if (top > 10) {
-        $(".navbar").addClass("navbar-gd", 2000)
-        $(".navbar-default .navbar-nav > li > a ").addClass("navbardea-gd", 2000)
-        $(".navbar-toggle").addClass();
-        $(".navbar-header").addClass();
-
+        $(".navbar").addClass("navbar-gd")
+        $(".navbar-default .navbar-nav > li > a ").addClass("navbardea-gd")
     } else {
-        $(".navbar").removeClass("navbar-gd", 2000)
-        $(".navbar-default .navbar-nav > li > a ").removeClass("navbardea-gd", 2000)
+        $(".navbar").removeClass("navbar-gd")
+        $(".navbar-default .navbar-nav > li > a ").removeClass("navbardea-gd")
     }
 }
 
@@ -53,9 +48,10 @@ $(document).ready(function () {
 var hgroups = $('.items>hgroup')
 var benchmark = window.innerHeight/1.8;
 function hgroupfunction (){
-    // console.log(benchmark);
+    console.log(benchmark);
     for(i=0;i<hgroups.length;i++){
         let x = hgroups[i].getBoundingClientRect().y;
+        console.log( hgroups[i].getBoundingClientRect());
         if (x<benchmark){
             hgroups[i].classList.add('show')
         }

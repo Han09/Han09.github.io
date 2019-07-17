@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UA判断</title>
+</head>
+<p id="c">结果</p>
+
+<body>
+    <script>
+        window.onload = function () {
+
+            var ua = window.navigator.userAgent;
+
+            let c = document.getElementById("c")
+            if (ua.indexOf("MicroMessenger") > 0) {
+                c.innerHTML = "WeiXIN";
+            }else{
+                c.innerHTML = "支付宝" + ua;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
