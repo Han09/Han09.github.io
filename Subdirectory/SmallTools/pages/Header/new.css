@@ -1,0 +1,17 @@
+#SelectView{
+    margin: 0 auto;
+    display: block;
+}
+
+.imgs{
+    height: 100px;
+    width: 100px;
+    box-shadow: 2px 2px 5px black;
+    margin: 4px;
+}
+
+canvas{
+    box-shadow: 2px 2px 5px blue;
+    display: block;
+    display: inline-block;
+}

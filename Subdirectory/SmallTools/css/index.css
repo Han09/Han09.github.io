@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 4vw;
+    text-align: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #b4e7fb 0, #F2F6F9 100%);
+    max-width: 1200px;
+    font-weight: bold;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    user-select: none;
+    background: white;
+    height: 100px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: 1px 1px 6px rgba(36, 159, 253, 0.19);
+}
+
+nav > h5 {
+    margin: 10px 0;
+}
+
+.ToolsList {
+    user-select: none;
+    border: 2px solid black;
+    position: relative;
+    margin: 50px 0;
+}
+
+.ToolsListTitle {
+    position: absolute;
+    height: 36px;
+    width: 100px;
+    background: #249FFD;
+    color: white;
+    top: -16px;
+    left: 20px;
+    border-radius: 5px;
+}
+
+.ToolsListTitle > img {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 8px 0;
+    vertical-align: top;
+}
+
+.ToolsListTitle > span {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.ToolsList {
+    display: flex;
+    min-height: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.Tool {
+    border: 1px solid rgba(120, 120, 120, 0.5);
+    height: 40px;
+    margin: 10px;
+    width: 120px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background: white;
+    border-radius: 5px;
+    line-height: 40px;
+}
+
+
+#Seach {
+    margin: 40px 0;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 6px rgba(36, 159, 253, 0.19);
+}
+
+.icon-seach {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+}
+
+#SeachText {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: white;
+    box-sizing: border-box;
+    padding-left: 50px;
+    color: black;
+    font-size: 1.2rem;
+    outline: none;
+    transition: background-color 1s, color 1s;
+}
+
+#SeachText:focus {
+    color: white;
+    background: #249FFD;
+    transition: background-color 1s, color 1s;
+}
+
+
+
+

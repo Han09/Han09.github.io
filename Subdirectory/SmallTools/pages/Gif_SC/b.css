@@ -1,0 +1,61 @@
+#photoview {
+    display: block;
+    min-height: 70px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.imgs {
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    position: relative;
+}
+
+.imgs > img {
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+
+#smallTitle {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.parms {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.parms > label {
+    display: block;
+    width: 100%;
+    margin: 10px;
+    text-align: left;
+}
+
+.ToolView > p {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+}
+
+#downloadButton {
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    color: white;
+    background: #249FFD;
+    text-decoration: underline;
+    border-radius: 5px;
+    height: 30px;
+    width: 60px;
+    outline: none;
+    text-align: center;
+    line-height: 30px;
+}
+
+#gif{
+    max-width: 98%;
+}

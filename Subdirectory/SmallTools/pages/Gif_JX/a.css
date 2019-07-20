@@ -1,0 +1,19 @@
+.png{
+    margin: 5px;
+}
+.ToolView>p{
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+}
+#alldownload{
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    color: white;
+    background: #249FFD;
+    text-decoration: underline;
+    border-radius: 5px;
+    height: 30px;
+    width: 60px;
+    outline: none;
+}

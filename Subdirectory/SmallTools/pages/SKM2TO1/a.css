@@ -1,0 +1,52 @@
+#WeiXin,
+#Alipay {
+    width: 0;
+    height: 0;
+    display: block;
+}
+#J_fileUp1,
+#J_fileUp2{
+    line-height: 20px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+#J_fileUp2{
+    width: calc(100% - 120px);
+    display: inline-block;
+}
+
+.Code{
+    width:40%;
+}
+#result>p{
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+#downloadButton{
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    color: white;
+    background: #249FFD;
+    text-decoration: underline;
+    border-radius: 5px;
+    height: 30px;
+    width: 60px;
+    outline: none;
+    text-align: center;
+    line-height: 30px;
+}
+
+#qrcode{
+    display: block;
+    border: 2px solid red;
+    width: 256px;
+    margin: 20px auto;
+}

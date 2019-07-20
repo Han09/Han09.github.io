@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Gif合成</title>
+    <link rel="stylesheet" href="../../css/acc.css">
+    <link rel="stylesheet" href="b.css">
+    <script src="../../lib/jquery-3.3.1.js"></script>
+    <script src="gifshot.min.js"></script>
+</head>
+<body>
+
+<nav>
+    <a href="../../index.html">
+        <h1>SmallTools-小工具集合</h1>
+        <h5>更多工具追加中</h5>
+    </a>
+</nav>
+
+<div class="ToolView">
+    <div class="ToolTitle">
+        <span>Gif合成</span>
+    </div>
+
+    <div class="fileInput">
+        <div class="J_fileUp">
+            <span id="file_name">选择文件</span>
+        </div>
+        <button id="start">合成Gif</button>
+        <input class="fileUP" type="file" accept="image/png,image/jpg" multiple>
+    </div>
+    <p id="smallTitle">请填写要生成的gif参数</p>
+    <form class="parms">
+        <label>
+            宽度：<input id="gifWidth" type="number" max="500" step="50" value="400">px
+        </label>
+        <label>
+            高度：<input id="gifHeight" type="number" max="500" step="50" value="400">px
+        </label>
+        <label>
+            帧切换速度：<input id="gifinterval" type="number" max="60" min="0.1" step="0.1" value="0.1">秒
+        </label>
+        <div id="photoview">
+
+        </div>
+    </form>
+</div>
+
+<div class="ToolView" id="result">
+    <div class="ToolTitle">
+        <span>合成结果</span>
+    </div>
+    <p>可右键另存为或
+        <a download="nice.gif" id="downloadButton">下载</a>
+    </p>
+    <!-- gif的显示区域 -->
+    <img id="gif">
+</div>
+<script src="main.js"></script>
+</body>
+</html>

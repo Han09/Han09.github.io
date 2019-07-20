@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Gif解析</title>
+    <link rel="stylesheet" href="../../css/acc.css">
+    <link rel="stylesheet" href="a.css">
+    <script src="./js/libgif.js"></script>
+    <script src="../../lib/jquery-3.3.1.js"></script>
+</head>
+<body>
+<nav>
+    <a href="../../index.html">
+        <h1>SmallTools-小工具集合</h1>
+        <h5>更多工具追加中</h5>
+    </a>
+</nav>
+
+<div class="ToolView">
+    <div class="ToolTitle">
+        <span>Gif解析</span>
+    </div>
+
+    <div class="fileInput">
+        <div class="J_fileUp">
+            <span id="file_name">选择文件</span>
+        </div>
+        <button id="start">分解Gif</button>
+        <input class="fileUP" type="file" accept="image/gif">
+    </div>
+
+    <img id="gifView" src="" rel:animated_src="" rel:auto_play="1" rel:rubbable="1"/>
+</div>
+
+<div class="ToolView" id="result">
+    <div class="ToolTitle">
+        <span>分解结果</span>
+    </div>
+    <p>可右键另存为或
+        <button id="alldownload">批量下载</button>
+    </p>
+
+    <div class="pngView"></div>
+</div>
+<script>
+    $(function () {
+        $("#result").hide()
+        let rub = new SuperGif({gif: document.getElementById('gifView')});
+        $(".J_fileUp").click(function () {
+            $("#gifView").attr("src", '');
+            $("#gifView").attr("rel:animated_srcc", '');
+            $(".pngView").html('')
+            $(".fileUP").trigger("click");
+        })
+        $(".fileUP").change(function () {
+            let url = URL.createObjectURL(this.files[0])
+            $("#gifView").attr("src", url);
+            $("#gifView").attr("rel:animated_srcc", url);
+            $("#file_name").html(this.files[0].name)
+            rub.load(function () {
+
+            });
+        })
+        $("#start").click(function () {
+            $("#result").show()
+            for (let i = 0; i <= rub.get_length() - 1; i++) {
+                rub.move_to(i);
+                let imgURL = $("canvas")[0].toDataURL("image/png");
+                let img = new Image();
+                img.src = imgURL;
+                img.className = "png";
+                $(".pngView").append(img);
+            }
+        })
+
+        $("#alldownload").click(function () {
+            for (let i = 0; i <= rub.get_length() - 1; i++) {
+                let d = document.createElement("a");
+                d.href = $("canvas")[0].toDataURL("image/png");
+                d.download = i + '.png';
+                $("body").append(d);
+                d.click();
+            }
+        })
+    })
+</script>
+</body>
+</html>

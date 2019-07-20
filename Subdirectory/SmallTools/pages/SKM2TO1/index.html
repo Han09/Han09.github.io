@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>收款码二合一</title>
+    <link rel="stylesheet" href="../../css/acc.css">
+    <link rel="stylesheet" href="a.css">
+    <script type="text/javascript" src="./lib/QRcode/grid.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/version.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/detector.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/formatinf.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/errorlevel.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/bitmat.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/datablock.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/bmparser.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/datamask.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/rsdecoder.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/gf256poly.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/gf256.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/decoder.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/qrcode.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/findpat.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/alignpat.js"></script>
+    <script type="text/javascript" src="./lib/QRcode/databr.js"></script>
+    <script src="./lib/qrcode.min.js"></script>
+</head>
+<body>
+<nav>
+    <a href="../../index.html">
+        <h1>SmallTools-小工具集合</h1>
+        <h5>更多工具追加中</h5>
+    </a>
+</nav>
+
+<div class="ToolView">
+    <div class="ToolTitle">
+        <span>收钱二合一</span>
+    </div>
+
+    <div class="fileInput">
+        <div id="J_fileUp1">
+            <span id="file_name1">选择微信收款码</span>
+        </div>
+        <input id="WeiXin" type="file" accept="image/jpg,image/png">
+    </div>
+
+    <div class="fileInput">
+        <div id="J_fileUp2">
+            <span id="file_name2">选择支付宝收款码</span>
+        </div>
+        <button id="start">合并收款码</button>
+        <input id="Alipay" type="file" accept="image/png,image/jpg">
+    </div>
+
+    <img src="" id="WeiXinCode" class="Code">
+    <img src="" id="AlipayCode" class="Code">
+    <p id="WeiXinURL"></p>
+    <p id="AlipayURL"></p>
+</div>
+
+<div class="ToolView" id="result">
+    <div class="ToolTitle">
+        <span>合成结果</span>
+    </div>
+    <p>可右键另存为或
+        <a download="nice.png" id="downloadButton">下载</a>
+    </p>
+    <div id="qrcode"></div>
+</div>
+<script src="b.js"></script>
+</body>
+</html>
